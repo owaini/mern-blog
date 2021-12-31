@@ -14,6 +14,7 @@ import {
     Route,
     Link 
 } from 'react-router-dom'
+import Footer from './components/footer/Footer'
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
 					<Route path="account" element={user ? <Account /> : <Login />} />
 					<Route path="post/:postId" element={<Single />} />
 				</Routes>
+				<Footer />
 			</Router>
 		);
 }
