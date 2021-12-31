@@ -1,0 +1,92 @@
+
+
+.login {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, rgb(204, 147, 147), rgb(122, 64, 64));
+
+}
+
+.loginTitle{
+    font-size: 50px;
+
+}
+
+.loginBox {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    width: 360px;
+    height: 350px;
+    border-radius: 7px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.loginBox:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius:5px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(255, 255,255, 0.2) 0%, rgba(255, 255, 255, 0.1)15%, transparent 50%, transparent 85%, rgba(255, 255, 255, 0.2) 100%);
+
+}
+.loginForm {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.loginForm > label {
+    margin: 10px 0;
+    
+}
+.loginForm > input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    font-weight: normal;
+}
+.loginForm > input {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.loginButton {
+    background: #fff;
+    color: #111;
+    max-width: 100px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.loginRegisterButton {
+    background: none;
+    max-width: 100px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    margin-left: -25px;
+    cursor: pointer;
+    }
